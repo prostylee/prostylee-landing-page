@@ -1,0 +1,104 @@
+#prostylee-wrapper {
+  width: 100%;
+  display: block; }
+  #prostylee-wrapper #prostylee-header-wrapper {
+    background-color: #451E8C;
+    height: auto; }
+    #prostylee-wrapper #prostylee-header-wrapper #top-navigation {
+      width: 100%;
+      height: auto;
+      display: block;
+      background-color: #0a5b88; }
+      #prostylee-wrapper #prostylee-header-wrapper #top-navigation #top-bar {
+        background-color: #451E8C; }
+        #prostylee-wrapper #prostylee-header-wrapper #top-navigation #top-bar .site-title {
+          display: none; }
+
+.component {
+  margin: 2em auto;
+  text-align: center; }
+
+.choose-us-section {
+  line-height: 2em; }
+  .choose-us-section .inner-choose-us .question-text {
+    color: #823FFD; }
+  .choose-us-section .inner-choose-us .heading {
+    font-size: 1.8rem;
+    color: #333333; }
+  .choose-us-section .inner-choose-us .description {
+    color: #8B9399; }
+  .choose-us-section .benefits li {
+    text-align: left;
+    border: 0;
+    padding-left: 0.2em;
+    color: #333333;
+    font-weight: 500; }
+    .choose-us-section .benefits li .icon {
+      margin-right: 0.5em; }
+
+.box-image {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .box-image img {
+    vertical-align: middle;
+    height: auto;
+    width: 100%; }
+
+@media only screen and (max-width: 480px) {
+  #prostylee-wrapper #prostylee-header-wrapper #top-navigation #top-bar {
+    padding-top: 1em;
+    padding-bottom: 1em; }
+    #prostylee-wrapper #prostylee-header-wrapper #top-navigation #top-bar .navbar-toggler {
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 0.5em; }
+      #prostylee-wrapper #prostylee-header-wrapper #top-navigation #top-bar .navbar-toggler:focus {
+        border: 0; }
+  #prostylee-wrapper #prostylee-header-wrapper #top-navigation .container {
+    display: block; }
+    #prostylee-wrapper #prostylee-header-wrapper #top-navigation .container #navbarCollapse {
+      background-color: black; }
+    #prostylee-wrapper #prostylee-header-wrapper #top-navigation .container .btn-download-app {
+      float: right;
+      background-color: #823FFD;
+      border: 0; }
+    #prostylee-wrapper #prostylee-header-wrapper #top-navigation .container .navbar-toggler {
+      float: left; }
+      #prostylee-wrapper #prostylee-header-wrapper #top-navigation .container .navbar-toggler .toggle-icon {
+        color: #fff; }
+    #prostylee-wrapper #prostylee-header-wrapper #top-navigation .container .site-branding {
+      display: inline-block;
+      position: relative; }
+  #prostylee-wrapper #prostylee-header-wrapper #feature-wrapper {
+    padding: 1em;
+    box-sizing: border-box; }
+    #prostylee-wrapper #prostylee-header-wrapper #feature-wrapper .introduction {
+      text-align: center;
+      margin-bottom: 4em; }
+      #prostylee-wrapper #prostylee-header-wrapper #feature-wrapper .introduction h2.text-title {
+        font-weight: bold;
+        font-size: 2.8rem;
+        color: #fff;
+        line-height: 3.8rem;
+        padding: 0.3em 0; }
+      #prostylee-wrapper #prostylee-header-wrapper #feature-wrapper .introduction .text-focus {
+        color: #F94F7E; }
+      #prostylee-wrapper #prostylee-header-wrapper #feature-wrapper .introduction .description {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1rem;
+        margin-bottom: 2em; }
+    #prostylee-wrapper #prostylee-header-wrapper #feature-wrapper .banners {
+      justify-content: center;
+      align-items: center;
+      display: inline-grid;
+      background: url("../prostylee-landing-page/assets/images/feature_circle.png") top center no-repeat;
+      padding-bottom: 2em; } }
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=style.css.map */
