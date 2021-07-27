@@ -60,6 +60,7 @@
   }
 }
 #main-wrapper {
+  margin-bottom: 30em;
   #hot-features {
     width: 100%;
     display: block;
@@ -84,13 +85,54 @@
   }
 }
 #prostylee-footer-wrapper {
+  margin-top: 5em;
+  position: relative;
+  overflow: inherit;
+  z-index: 1;
   a {
     text-decoration: none;
   }
   background-color: black;
   #feature-footer {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: -41.5%;
+    width: 100%;
+    height: auto;
     .container {
-
+      position: relative;
+      .inner-feature {
+        background-color: #823FFD;
+        overflow: hidden;
+        padding-top: 1.2em;
+        box-sizing: border-box;
+        border-radius: 10px;
+        .put-installation {
+          margin-bottom: 2em;
+          padding: 1.5em  2em 0 2em;
+          .header {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #FFFFFF;
+            margin-bottom: 1.5em;
+          }
+          .download-app {
+            margin: 2em auto;
+          }
+        }
+      }
+      .footer-banner {
+        justify-content: center;
+        align-items: center;
+        display: inline-grid;
+        background: url("http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/footer_circle.png") center 3em no-repeat;
+        background-size: contain;
+        img {
+          width: 203px;
+          height: 264px;
+        }
+      }
     }
   }
   #bottom-widgets {
@@ -149,6 +191,7 @@
     }
     }
     .about-widget {
+      padding-top: 8em;
       #footer-logo {
         padding: 2em 0;
         box-sizing: border-box;

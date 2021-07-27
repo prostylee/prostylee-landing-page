@@ -25,7 +25,7 @@
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis eros et purus pretium fringilla.
                                 </p>
-                                <?php get_template_part( 'components/platform', 'store' ); ?>
+                                <?php get_template_part( 'components/platform', 'store', null ); ?>
                             </div>
                             <!-- end introduction -->
                             <div class="col-md-8 banners">

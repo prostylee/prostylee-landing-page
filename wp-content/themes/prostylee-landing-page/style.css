@@ -45,28 +45,68 @@
     height: auto;
     width: 100%; }
 
-#main-wrapper #hot-features {
-  width: 100%;
-  display: block;
-  background-color: #FAF8FE; }
-#main-wrapper #brands-partners {
-  width: 100%;
-  display: flex; }
-  #main-wrapper #brands-partners .partners {
-    clear: both; }
-    #main-wrapper #brands-partners .partners .card {
-      float: left;
-      width: 25%;
-      border: none; }
-      #main-wrapper #brands-partners .partners .card img {
-        width: 6em;
-        height: 3.2em;
-        vertical-align: middle; }
+#main-wrapper {
+  margin-bottom: 30em; }
+  #main-wrapper #hot-features {
+    width: 100%;
+    display: block;
+    background-color: #FAF8FE; }
+  #main-wrapper #brands-partners {
+    width: 100%;
+    display: flex; }
+    #main-wrapper #brands-partners .partners {
+      clear: both; }
+      #main-wrapper #brands-partners .partners .card {
+        float: left;
+        width: 25%;
+        border: none; }
+        #main-wrapper #brands-partners .partners .card img {
+          width: 6em;
+          height: 3.2em;
+          vertical-align: middle; }
 
 #prostylee-footer-wrapper {
+  margin-top: 5em;
+  position: relative;
+  overflow: inherit;
+  z-index: 1;
   background-color: black; }
   #prostylee-footer-wrapper a {
     text-decoration: none; }
+  #prostylee-footer-wrapper #feature-footer {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: -41.5%;
+    width: 100%;
+    height: auto; }
+    #prostylee-footer-wrapper #feature-footer .container {
+      position: relative; }
+      #prostylee-footer-wrapper #feature-footer .container .inner-feature {
+        background-color: #823FFD;
+        overflow: hidden;
+        padding-top: 1.2em;
+        box-sizing: border-box;
+        border-radius: 10px; }
+        #prostylee-footer-wrapper #feature-footer .container .inner-feature .put-installation {
+          margin-bottom: 2em;
+          padding: 1.5em  2em 0 2em; }
+          #prostylee-footer-wrapper #feature-footer .container .inner-feature .put-installation .header {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #FFFFFF;
+            margin-bottom: 1.5em; }
+          #prostylee-footer-wrapper #feature-footer .container .inner-feature .put-installation .download-app {
+            margin: 2em auto; }
+      #prostylee-footer-wrapper #feature-footer .container .footer-banner {
+        justify-content: center;
+        align-items: center;
+        display: inline-grid;
+        background: url("http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/footer_circle.png") center 3em no-repeat;
+        background-size: contain; }
+        #prostylee-footer-wrapper #feature-footer .container .footer-banner img {
+          width: 203px;
+          height: 264px; }
   #prostylee-footer-wrapper #bottom-widgets .footer-widget {
     margin-bottom: 1.5em; }
     #prostylee-footer-wrapper #bottom-widgets .footer-widget .widget-header {
@@ -103,15 +143,17 @@
     display: inline-block;
     margin-right: 0.3em;
     font-size: 0.7rem; }
-  #prostylee-footer-wrapper #bottom-widgets .about-widget #footer-logo {
-    padding: 2em 0;
-    box-sizing: border-box; }
-    #prostylee-footer-wrapper #bottom-widgets .about-widget #footer-logo img {
-      margin: 0 auto;
-      vertical-align: middle;
-      display: block; }
-  #prostylee-footer-wrapper #bottom-widgets .about-widget .description {
-    color: #8B9399; }
+  #prostylee-footer-wrapper #bottom-widgets .about-widget {
+    padding-top: 8em; }
+    #prostylee-footer-wrapper #bottom-widgets .about-widget #footer-logo {
+      padding: 2em 0;
+      box-sizing: border-box; }
+      #prostylee-footer-wrapper #bottom-widgets .about-widget #footer-logo img {
+        margin: 0 auto;
+        vertical-align: middle;
+        display: block; }
+    #prostylee-footer-wrapper #bottom-widgets .about-widget .description {
+      color: #8B9399; }
   #prostylee-footer-wrapper #copyright-mobile {
     display: block;
     overflow: hidden;
