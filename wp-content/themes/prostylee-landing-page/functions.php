@@ -105,13 +105,16 @@
 
 
 	function prostylee_landing_styles() {
-		wp_enqueue_style( PROSTYLEE_LANDING.'-style', get_template_directory_uri().'/style.css', array(), wp_get_theme()->get( 'Version' ) );
-		wp_enqueue_style( PROSTYLEE_LANDING.'-bootstrap-css', get_template_directory_uri().'/assets/css/bootstrap.min.css', array(), wp_get_theme()->get( 'Version' ) );
+		//$temp = get_template_directory_uri();
+		wp_enqueue_style( PROSTYLEE_LANDING.'-style', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/style.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( PROSTYLEE_LANDING.'-bootstrap-css', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/css/bootstrap.min.css', array(), wp_get_theme()->get( 'Version' ) );
+        wp_enqueue_style( PROSTYLEE_LANDING.'-aos-css', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/css/aos.css', array(), wp_get_theme()->get( 'Version' ) );
 	}
 	add_action('wp_enqueue_scripts', PROSTYLEE_LANDING.'_styles');
 
 	function prostylee_landing_scripts() {
-		wp_enqueue_script( PROSTYLEE_LANDING.'-bootstrap-js', get_template_directory_uri().'/assets/js/bootstrap.min.js', array(), '0.1', false );
+		wp_enqueue_script( PROSTYLEE_LANDING.'-bootstrap-js', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/js/bootstrap.min.js', array(), '0.1', false );
+        wp_enqueue_script( PROSTYLEE_LANDING.'-aos-js', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/js/aos.js', array(), '0.1', false );
 	}
 
 	add_action('wp_enqueue_scripts', PROSTYLEE_LANDING.'_scripts');

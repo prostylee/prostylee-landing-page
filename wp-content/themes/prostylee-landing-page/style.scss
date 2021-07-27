@@ -59,6 +59,120 @@
     width: 100%;
   }
 }
+#main-wrapper {
+  #hot-features {
+    width: 100%;
+    display: block;
+    background-color: #FAF8FE;
+  }
+  #brands-partners {
+    width: 100%;
+    display: flex;
+    .partners {
+      clear: both;
+      .card {
+        float: left;
+        width: 25%;
+        border: none;
+        img {
+          width: 6em;
+          height: 3.2em;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+#prostylee-footer-wrapper {
+  a {
+    text-decoration: none;
+  }
+  background-color: black;
+  #feature-footer {
+    .container {
+
+    }
+  }
+  #bottom-widgets {
+    .footer-widget {
+      margin-bottom: 1.5em;
+      .widget-header{
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.9rem;
+      }
+      ul {
+        list-style: none;
+      }
+      .list-group {
+        .list-group-item {
+          background-color: transparent;
+          padding: 0.2em 0;
+          a {
+            color: #8B9399;
+            font-size: 0.95rem;
+          }
+        }
+      }
+      .socials {
+        display: block;
+        list-style: none;
+        li {
+          float: left;
+          a {
+            color: #fff;
+            display: block;
+            padding: 0.5rem;
+            .fab {
+              font-size: 1.2rem;
+            }
+          }
+          &:first-child a {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    .contact-widget {
+      .address-box {
+        p {
+          line-height: 1.5rem;
+          color: #8B9399;
+          font-size: 0.9rem;
+          margin-bottom: 0.4em;
+        }
+        .fas {
+          display: inline-block;
+          margin-right: 0.3em;
+          font-size: 0.7rem;
+        }
+    }
+    }
+    .about-widget {
+      #footer-logo {
+        padding: 2em 0;
+        box-sizing: border-box;
+        img {
+          margin: 0 auto;
+          vertical-align: middle;
+          display: block;
+        }
+      }
+      .description {
+        color: #8B9399;
+      }
+    }
+  }
+  #copyright-mobile {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    color: #8B9399;
+    font-size: 0.9rem;
+    padding: 0.5em 0;
+    box-sizing: border-box;
+  }
+}
 @media only screen and (max-width: 480px){
   #prostylee-wrapper {
     #prostylee-header-wrapper {
@@ -103,7 +217,7 @@
         box-sizing: border-box;
         .introduction {
           text-align: center;
-          margin-bottom: 4em;
+          margin-bottom: 3em;
           h2.text-title {
             font-weight: bold;
             font-size: 2.8rem;
@@ -124,9 +238,14 @@
           justify-content: center;
           align-items: center;
           display: inline-grid;
-          background: url("../prostylee-landing-page/assets/images/feature_circle.png") top center no-repeat;
+          background: url("http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/feature_circle.png") top center no-repeat;
           padding-bottom: 2em;
         }
+      }
+    }
+    #prostylee-footer-wrapper {
+      .copyright {
+        display: none;
       }
     }
   }
