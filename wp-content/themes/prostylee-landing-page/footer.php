@@ -121,12 +121,14 @@
         <!-- end prostylee-footer-wrapper -->
     </div>
 <!-- end prostylee-wrapper -->
+        <script>
+            AOS.init({
+                duration: 1000,
+            });
+        </script>
+
+        <?php wp_footer(); ?>
 </body>
-<script>
-    AOS.init({
-        duration: 1000,
-    });
-</script>
 
 </html>
 

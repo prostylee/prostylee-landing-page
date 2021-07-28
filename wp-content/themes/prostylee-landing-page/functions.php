@@ -113,8 +113,10 @@
 	add_action('wp_enqueue_scripts', PROSTYLEE_LANDING.'_styles');
 
 	function prostylee_landing_scripts() {
+		wp_enqueue_script('jquery');
 		wp_enqueue_script( PROSTYLEE_LANDING.'-bootstrap-js', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/js/bootstrap.min.js', array(), '0.1', false );
         wp_enqueue_script( PROSTYLEE_LANDING.'-aos-js', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/js/aos.js', array(), '0.1', false );
+		wp_enqueue_script( PROSTYLEE_LANDING.'-main-js', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/js/main.js', array(), '0.1', false );
 	}
 
 	add_action('wp_enqueue_scripts', PROSTYLEE_LANDING.'_scripts');
