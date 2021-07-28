@@ -14,46 +14,103 @@
         #prostylee-wrapper #prostylee-header-wrapper #top-navigation #top-bar .site-title {
           display: none; }
 
-.component {
-  margin: 2em auto;
-  text-align: center; }
-
 .choose-us-section {
+  margin: 3rem auto;
   line-height: 2em; }
-  .choose-us-section .inner-choose-us .question-text {
-    color: #823FFD; }
-  .choose-us-section .inner-choose-us .heading {
-    font-size: 1.8rem;
-    color: #333333; }
-  .choose-us-section .inner-choose-us .description {
-    color: #8B9399; }
+  .choose-us-section .inner-choose-us {
+    padding: 0 2em;
+    box-sizing: border-box; }
+    .choose-us-section .inner-choose-us .question-text {
+      color: #823FFD;
+      font-size: 1.1rem;
+      font-weight: normal; }
+    .choose-us-section .inner-choose-us .heading {
+      color: #333333;
+      font-size: 2rem !important; }
+    .choose-us-section .inner-choose-us .description {
+      color: #8B9399;
+      line-height: 1.5rem; }
   .choose-us-section .benefits li {
     text-align: left;
     border: 0;
     padding-left: 0.2em;
     color: #333333;
     font-weight: 500; }
-    .choose-us-section .benefits li .icon {
+    .choose-us-section .benefits li .icon-item {
       margin-right: 0.5em; }
 
-.box-image {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .box-image img {
-    vertical-align: middle;
-    height: auto;
-    width: 100%; }
+.component {
+  text-align: center; }
+  .component .box-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto; }
+    .component .box-image img {
+      vertical-align: middle;
+      height: auto;
+      width: 100%; }
+  .component .heading {
+    font-size: 1.5rem;
+    color: #333333; }
+  .component .content {
+    color: #333333; }
+  .component span.icon {
+    display: block;
+    margin: 1em auto; }
 
 #main-wrapper {
   margin-bottom: 30em; }
   #main-wrapper #hot-features {
+    padding: 4em 0;
+    box-sizing: border-box;
     width: 100%;
     display: block;
     background-color: #FAF8FE; }
+    #main-wrapper #hot-features .hot-header {
+      display: block;
+      text-align: center;
+      padding-bottom: 1em; }
+      #main-wrapper #hot-features .hot-header .hot-note {
+        color: #F46F2F;
+        font-size: 1.1rem;
+        font-weight: normal; }
+      #main-wrapper #hot-features .hot-header .hot-slogan {
+        font-size: 2rem; }
+  #main-wrapper #how-to-install {
+    padding: 4em 0;
+    box-sizing: border-box; }
+    #main-wrapper #how-to-install .box-header {
+      text-align: center;
+      margin-bottom: 2em; }
+      #main-wrapper #how-to-install .box-header .question-text {
+        color: #F46F2F;
+        font-size: 1.1rem;
+        font-weight: normal; }
+      #main-wrapper #how-to-install .box-header .heading {
+        font-size: 2rem; }
+    #main-wrapper #how-to-install .card {
+      margin-bottom: 1em;
+      border: 1px solid #E9EAEB;
+      box-sizing: border-box;
+      border-radius: 10px; }
+      #main-wrapper #how-to-install .card .card-title {
+        font-size: 1.5em;
+        margin-bottom: 0.5em; }
+      #main-wrapper #how-to-install .card .card-text {
+        font-size: 0.95rem;
+        color: #333333; }
   #main-wrapper #brands-partners {
     width: 100%;
     display: flex; }
+    #main-wrapper #brands-partners .box-header {
+      text-align: center;
+      margin-bottom: 2em; }
+      #main-wrapper #brands-partners .box-header .heading {
+        font-size: 2rem;
+        padding: 0 0.5em; }
+      #main-wrapper #brands-partners .box-header .partners-count {
+        color: #823FFD; }
     #main-wrapper #brands-partners .partners {
       clear: both; }
       #main-wrapper #brands-partners .partners .card {

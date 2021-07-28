@@ -45,8 +45,8 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12 inner-choose-us">
                                 <h5 class="question-text">Tại sao chọn chúng tôi?</h5>
-                                <h3 class="heading">Shopping your our way to safety</h3>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quis?</p>
+                                <h3 class="heading">Shopping our way to safety</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis eros et purus pretium fringilla.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -56,20 +56,20 @@
                             <div class="col-md-6 section-right benefits">
                                 <ul class="list-group">
                                     <li class="list-group-item">
-                                        <span class="icon"><img src="<?php //echo get_template_directory_uri();?>http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/sample.png" alt=""></span>
+                                        <span class="icon-item"><img src="<?php //echo get_template_directory_uri();?>http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/sample.png" alt=""></span>
                                         <span class="text">Đơn giản và dễ dùng</span>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="icon"><img src="<?php //echo get_template_directory_uri();?>http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/quickly.png" alt=""></span>
+                                        <span class="icon-item"><img src="<?php //echo get_template_directory_uri();?>http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/quickly.png" alt=""></span>
                                         <span class="text">Nhanh chóng, an toàn</span></li>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="icon"><img src="<?php //echo get_template_directory_uri();?>http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/anywhere.png" alt=""></span>
+                                        <span class="icon-item"><img src="<?php //echo get_template_directory_uri();?>http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/anywhere.png" alt=""></span>
                                         <span class="text">Mọi lúc mọi nơi</span>
                                     </li>
                                     </li>
                                     <li class="list-group-item">
-                                        <span class="icon"><img src="<?php //echo get_template_directory_uri();?>http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/good_brand.png" alt=""></span>
+                                        <span class="icon-item"><img src="<?php //echo get_template_directory_uri();?>http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/good_brand.png" alt=""></span>
                                         <span class="text">Hàng chính hãng, thương hiệu uy tín</span>
                                     </li>
                                 </ul>
@@ -80,14 +80,15 @@
                 </section>
                 <!-- end component choose-us-section-->
                 <section id="hot-features">
-                    <section class="component hot-features">
+                    <section class="hot-header">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 inner-choose-us">
-                                    <h5 class="question-text">Tính năng nổi bật</h5>
-                                    <h3 class="heading">Nâng tầm trải nghiệm mua sắm online của bạn</h3>
-                                </div>
-                            </div>
+                            <h5 class="hot-note">Tính năng nổi bật</h5>
+                            <h3 class="hot-slogan">Nâng tầm trải nghiệm mua sắm online của bạn</h3>
+                        </div>
+                    </section>
+                    <!-- end hot-header -->
+                    <section class="component shopping-passion">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-md-6 section-left">
                                     <div class="box-image">
@@ -98,29 +99,29 @@
                                 <div class="col-md-6 section-right">
                                     <span class="icon"><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/feature_icon.png" alt=""></span>
                                     <h3 class="heading">Thỏa sức mua sắm</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus et quo unde! Aliquid error facere nemo quae reprehenderit. Maiores, sequi!</p>
+                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus et quo unde! Aliquid error facere nemo quae reprehenderit. Maiores, sequi!</p>
                                 </div>
                             </div>
                         </div>
                         <!-- end container -->
                     </section>
-                    <!-- end host-features -->
+                    <!-- end shopping-passion -->
 
                     <section class="component inspirations">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-12 col-sm-12">
+                                <div class="col-md-15 col-sm-12">
                                     <div class="box-image">
-                                        <a href=""><img src="<?php echo get_template_directory_uri();?>/assets/images/feature_image.png" alt=""></a>
+                                        <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/feature_image.png" alt=""></a>
                                     </div>
                                     <!-- end box-image -->
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 section-right benefits">
-                                    <span class="icon"><img src="<?php echo get_template_directory_uri();?>/assets/images/love.png" alt=""></span>
+                                <div class="col-md-6 col-sm-12 section-right">
+                                    <span class="icon"><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/love.png" alt=""></span>
                                     <h3 class="heading">Cảm hứng mỗi ngày từ bạn bè và cộng đồng thời trang</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus et quo unde! Aliquid error facere nemo quae reprehenderit. Maiores, sequi!</p>
+                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus et quo unde! Aliquid error facere nemo quae reprehenderit. Maiores, sequi!</p>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +132,7 @@
                     <section class="component product-post">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-12 col-sm-12">
+                                <div class="col-md-12 col-sm-12 section-right">
                                     <div class="box-image">
                                         <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/product_post.png" alt=""></a>
                                     </div>
@@ -139,10 +140,10 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 section-right benefits">
-                                    <span class="icon"><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/love.png" alt=""></span>
+                                <div class="col-md-12 col-sm-12 section-left">
+                                    <span class="icon"><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/post_icon.png" alt=""></span>
                                     <h3 class="heading">Đăng sản phẩm và mua bán một cách dễ dàng</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus et quo unde! Aliquid error facere nemo quae reprehenderit. Maiores, sequi!</p>
+                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus et quo unde! Aliquid error facere nemo quae reprehenderit. Maiores, sequi!</p>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +157,7 @@
                         <div class="row box-header">
                             <div class="col-md-12 cold-sm-12 header">
                                 <h5 class="question-text">How we work?</h5>
-                                <h3 class="heading">Bắt đầu tham gia chỉ trong 3 bước đơn giản</h3>
+                                <h3 class="heading">Bắt đầu tham gia chỉ trong<br/> 3 bước đơn giản</h3>
                             </div>
                         </div>
                         <!-- end box-header -->
@@ -165,7 +166,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">1. Tải ứng dựng</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, officia.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis eros et purus pretium fringilla.</p>
                                         <img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/step_1.png" alt="" class="card-img-bottom"/>
                                     </div>
                                 </div>
@@ -174,7 +175,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">2. Đăng ký, đăng nhập</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, officia.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis eros et purus pretium fringilla.</p>
                                         <img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/step_2.png" alt="" class="card-img-bottom"/>
                                     </div>
                                 </div>
@@ -183,7 +184,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">3. Trải nghiệm ứng dụng</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, officia.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis eros et purus pretium fringilla.</p>
                                         <img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page//assets/images/step_3.png" alt="" class="card-img-bottom"/>
                                     </div>
                                 </div>
@@ -194,33 +195,39 @@
                     <!-- end container -->
                 </section>
                 <!-- end how-to-install -->
-                <section id="brands-partners">
+                <section id="brands-partners" class="component">
                     <div class="container">
-                        <h3 class="header">
-                            <span class="partners-count">+1,000</span> thương hiệu, của hàng uy tín chất lượng
-                        </h3>
-                        <div class="partners">
-                            <div class="card">
-                                <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
+                        <div class="row">
+                            <div class="box-header col-md-12 col-sm-12">
+                                <h3 class="heading">
+                                    <span class="partners-count">+1,000</span> thương hiệu, của hàng uy tín chất lượng
+                                </h3>
                             </div>
-                            <div class="card">
-                                <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
+                            <!-- end box-header -->
+                            <div class="box-content partners">
+                                    <div class="card">
+                                        <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
+                                    </div>
+                                    <div class="card">
+                                        <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
+                                    </div>
+                                    <div class="card">
+                                        <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
+                                    </div>
+                                    <div class="card">
+                                        <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
+                                    </div>
+                                    <div class="card">
+                                        <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
+                                    </div>
+                                    <div class="card">
+                                        <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
+                                    </div>
                             </div>
-                            <div class="card">
-                                <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
-                            </div>
-                            <div class="card">
-                                <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
-                            </div>
-                            <div class="card">
-                                <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
-                            </div>
-                            <div class="card">
-                                <a href=""><img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/partner.png" class="card-img-top" alt=""></a>
-                            </div>
+                            <!-- end end partners -->
                         </div>
-                        <!-- end partners -->
                     </div>
+                    <!-- end container -->
                 </section>
                 <!-- end brands-partners -->
             </main>
