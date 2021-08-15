@@ -9,9 +9,44 @@
       height: auto;
       display: block;
       background-color: #0a5b88;
+      margin-bottom: 4em;
       #top-bar {
         background-color: #451E8C;
+        padding: 1em;
+        .custom-logo {
+          display: none;
+        }
+        ul {
+          padding-left: 2em;
+          li {
+            a {
+              text-decoration: none;
+              color: #FFFFFF;
+              padding: 0 1.5em;
+              box-sizing: border-box;
+            }
+          }
+        }
+        .btn-download-app {
+          background-color: #823FFD !important;
+          border: 0;
+        }
         .site-title {
+          display: none;
+        }
+      }
+      #top-bar.top-bar-scrolled {
+        background-color: #FFFFFF;
+        box-shadow: 3px 3px 3px #E5E5E5;
+        ul {
+          padding-left: 2em;
+          li {
+            a {
+                color: #000000;
+            }
+          }
+        }
+        .header-logo {
           display: none;
         }
       }
@@ -85,9 +120,9 @@
 }
 .choose-us-section {
   margin: 3rem auto;
+  padding: 2em 0;
   line-height: 2em;
   .inner-choose-us {
-    padding: 0 2em;
     box-sizing: border-box;
     .question-text {
       color: #823FFD;
@@ -101,6 +136,12 @@
     .description {
       color: #8B9399;
       line-height: 1.5rem;
+    }
+  }
+  .using-phone {
+    margin-top: -11em;
+    img {
+      width: 80%;
     }
   }
   .benefits {
@@ -117,7 +158,6 @@
   }
 }
 .component {
-  text-align: center;
   .box-image {
     display: flex;
     justify-content: center;
@@ -164,8 +204,51 @@
     }
   }
 }
+#feature-wrapper {
+  background-color: #451E8C;
+  padding: 5em 0;
+  box-sizing: border-box;
+  .introduction {
+    margin-bottom: 3em;
+    padding: 5em 9em 5em 1em;
+    box-sizing: border-box;
+    .text-title {
+      font-weight: 500;
+      font-size: 4.5rem;
+      color: #fff;
+      line-height: 5rem;
+    }
+    .text-focus {
+      color: #F94F7E;
+    }
+    .description {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      margin-bottom: 2em;
+    }
+  }
+  .banners {
+    position: relative;
+    justify-content: right;
+    align-items: center;
+    background-image: url("assets/images/feature_circle.png");
+    background-repeat: no-repeat;
+    background-size: 74%;
+    background-position: right;
+    padding-bottom: 2em;
+    .inner-banner-box {
+      width: 100%;
+      height: 100%;
+      right: -1em;
+      background-image: url('assets/images/feature_image.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position-x: 70%;
+    }
+  }
+}
 #main-wrapper {
-  margin-bottom: 30em;
+  margin-bottom: 20em;
   #hot-features {
     padding: 4em 0;
     box-sizing: border-box;
@@ -182,7 +265,9 @@
         font-weight: normal;
       }
       .hot-slogan {
-        font-size: 2rem;
+        font-size: 3rem;
+        padding: 0 7em;
+        box-sizing: border-box;
       }
     }
   }
@@ -258,7 +343,7 @@
     z-index: 10;
     position: absolute;
     left: 0;
-    top: -41.5%;
+    top: -50%;
     width: 100%;
     height: auto;
     .container {
@@ -287,7 +372,7 @@
         justify-content: center;
         align-items: center;
         display: inline-grid;
-        background: url("http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/footer_circle.png") center 3em no-repeat;
+        background: url("assets/images/footer_circle.png") center 3em no-repeat;
         background-size: contain;
         img {
           width: 203px;
@@ -297,6 +382,7 @@
     }
   }
   #bottom-widgets {
+    padding-top: 11em;
     .footer-widget {
       margin-bottom: 1.5em;
       .widget-header{
@@ -336,10 +422,9 @@
     }
     }
     .about-widget {
-      padding-top: 8em;
+      padding-right: 15%;
       #footer-logo {
-        padding: 2em 0;
-        box-sizing: border-box;
+        margin-bottom: 1em;
         img {
           margin: 0 auto;
           vertical-align: middle;
@@ -361,6 +446,113 @@
     box-sizing: border-box;
   }
 }
+
+#about-wrapper {
+  #feature-wrapper {
+    .introduction {
+      margin-bottom: 3em;
+      padding: 0em 0 4em 0;
+      .text-title {
+        font-size: 3rem;
+        color: #fff;
+        line-height: 4rem;
+      }
+    }
+  }
+  #main-wrapper {
+    .entry-content  {
+      .overview-img-group {
+        display: block;
+        text-align: center;
+        margin-top: -8em;
+        img {
+          width: 100%;
+        }
+      }
+      .content-group {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 4em 0;
+        overflow: hidden;
+        .inner-content {
+          width: 50%;
+          float: left;
+          padding-right: 12em;
+          position: relative;
+          padding-top: 5em;
+        }
+        .inner-img {
+          height: 520px;
+          width: 520px;
+          float: right;
+          background-image: url("assets/images/about_content_bg.png");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
+          img {
+            width: 470px;
+            height: 470px;
+            border-radius: 50%;
+            position: absolute;
+            right: 22px;
+            top: 108px;
+          }
+        }
+      }
+    }
+    .lgx-logo-wrapper {
+      padding: 0;
+    }
+    .lgx-logo-item {
+      height: 10em;
+      border-radius: 5%;
+      background-color: #F4F5F5;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .slider-group {
+      margin-top: 2em;
+      margin-bottom: 6em;
+    }
+    .wpsm_team_2_b_row {
+      img {
+        height: 20em;
+      }
+      .wpsm_team_2_b_desc {
+        display: none !important;
+      }
+    }
+  }
+  .footer-about {
+    overflow: hidden;
+    box-sizing: border-box;
+    .inner-feature {
+     padding-top: 3em !important;
+     padding-bottom: 3em;
+    }
+    .widget {
+      text-align: center;
+      color: #fff;
+      padding: 0 3em;
+      h2 {
+        font-size: 3rem;
+      }
+      a {
+        color: #fff;
+      }
+      &:first-child {
+        border-right:  1px solid rgba(255, 255, 255, 0.4);
+      }
+      .btn {
+        background-color: #FFFFFF;
+        margin-top: 2em;
+        color: #823FFD;
+        border: 0;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 480px){
   #prostylee-wrapper {
     #prostylee-header-wrapper {
@@ -374,7 +566,6 @@
             margin-right: 0.5em;
             &:focus {
               border: 0;
-
             }
           }
         }
@@ -384,7 +575,7 @@
           }
           .btn-download-app {
             float: right;
-            background-color: #823FFD;
+            background-color: #823FFD !important;
             border:0;
           }
           display: block;
@@ -400,36 +591,36 @@
           }
         }
       }
-      #feature-wrapper {
-        padding: 1em;
-        box-sizing: border-box;
-        .introduction {
-          text-align: center;
-          margin-bottom: 3em;
-          h2.text-title {
-            font-weight: bold;
-            font-size: 2.8rem;
-            color: #fff;
-            line-height: 3.8rem;
-            padding: 0.3em 0;
-          }
-          .text-focus {
-            color: #F94F7E;
-          }
-          .description {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 1rem;
-            margin-bottom: 2em;
-          }
-        }
-        .banners {
-          justify-content: center;
-          align-items: center;
-          display: inline-grid;
-          background: url("http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/feature_circle.png") top center no-repeat;
-          padding-bottom: 2em;
-        }
-      }
+      //#feature-wrapper {
+      //  padding: 1em;
+      //  box-sizing: border-box;
+      //  .introduction {
+      //    text-align: center;
+      //    margin-bottom: 3em;
+      //    h2.text-title {
+      //      font-weight: bold;
+      //      font-size: 2.8rem;
+      //      color: #fff;
+      //      line-height: 3.8rem;
+      //      padding: 0.3em 0;
+      //    }
+      //    .text-focus {
+      //      color: #F94F7E;
+      //    }
+      //    .description {
+      //      color: rgba(255, 255, 255, 0.7);
+      //      font-size: 1rem;
+      //      margin-bottom: 2em;
+      //    }
+      //  }
+      //  .banners {
+      //    justify-content: center;
+      //    align-items: center;
+      //    display: inline-grid;
+      //    background: url("assets/images/feature_circle.png") top center no-repeat;
+      //    padding-bottom: 2em;
+      //  }
+      //}
     }
     #prostylee-footer-wrapper {
       .copyright {
@@ -444,9 +635,93 @@
       }
     }
   }
+  #about-wrapper {
+    #feature-wrapper {
+      padding: 3em 0;
+      .introduction {
+        margin-bottom: 3em;
+        padding: 0em 0 4em 0;
+        .text-title {
+          font-size: 2rem;
+          color: #fff;
+          line-height: 2.5rem;
+          text-align: center;
+        }
+      }
+    }
+    #main-wrapper {
+      margin-bottom: 35em;
+      .entry-content  {
+        .overview-img-group {
+          img {
+            width: 100%;
+            height: 50%;
+          }
+        }
+        .content-group {
+          .inner-content {
+            width: 100% ;
+            display: block;
+            padding-right: 0;
+            padding-top: 0;
+            text-align: center;
+            margin-bottom: 2em;
+          }
+          .inner-img {
+            height: 55%;
+            width: 100%;
+            margin-top: 1em;
+            background-position: top;
+            img {
+              width: 93%;
+              height: 37.5%;
+              border-radius: 50%;
+              position: absolute;
+              right: 3%;
+              top: 51.5%;
+            }
+          }
+        }
+      }
+    }
+    .footer-about {
+      .inner-feature {
+        padding: 1em 1.5em;
+      }
+      .widget {
+        text-align: center;
+        padding-top: 1em;
+        color: #fff;
+        h2 {
+          font-size: 2rem;
+        }
+        a {
+        }
+        &:first-child {
+          border-right: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+        }
+        .btn {
+
+        }
+      }
+    }
+  }
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+}
+@media screen and (min-width: 1201px){
+
+}
