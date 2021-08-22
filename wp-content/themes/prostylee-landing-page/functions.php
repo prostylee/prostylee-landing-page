@@ -1,12 +1,14 @@
-<?php 
-	define('PROSTYLEE_LANDING', 'prostylee_landing');
+<?php
+const PROSTYLEE_LANDING = 'prostylee_landing';
+define("DIRECTORY_URI", get_template_directory_uri());
 
-	if ( ! function_exists( PROSTYLEE_LANDING.'_setup' ) ) :
+if ( ! function_exists( PROSTYLEE_LANDING.'_setup' ) ) :
 	function prostylee_landing_setup() {
 
 		load_theme_textdomain( PROSTYLEE_LANDING, get_template_directory() . '/languages' );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
+		add_post_type_support( 'page', 'excerpt' );
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1568, 9999 );
 		add_theme_support( 'responsive-embeds' );
@@ -28,9 +30,11 @@
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'menu-1' => __( 'Primary', PROSTYLEE_LANDING ),
+				'primary' => __( 'Primary Menu', PROSTYLEE_LANDING ),
 				'footer' => __( 'Footer Menu', PROSTYLEE_LANDING ),
 				'social' => __( 'Social Links Menu', PROSTYLEE_LANDING ),
+				'privacy' => __( 'Privacy Menu', PROSTYLEE_LANDING ),
+				'blog' => __( 'Blog Menu', PROSTYLEE_LANDING ),
 			)
 		);
 
@@ -64,10 +68,9 @@
 				'width'       => 190,
 				'flex-width'  => false,
 				'flex-height' => false,
+				'default-image' => get_template_directory_uri().'/assets/logo/header_log.png'
 			)
 		);
-
-		
 
 		// Add custom editor font sizes.
 		add_theme_support(
@@ -104,20 +107,47 @@
 	add_action( 'after_setup_theme', PROSTYLEE_LANDING.'_setup' );
 
 
+	$directory_uri = get_template_directory_uri();
 	function prostylee_landing_styles() {
-		//$temp = get_template_directory_uri();
-		wp_enqueue_style( PROSTYLEE_LANDING.'-style', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/style.css', array(), wp_get_theme()->get( 'Version' ) );
-		wp_enqueue_style( PROSTYLEE_LANDING.'-bootstrap-css', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/css/bootstrap.min.css', array(), wp_get_theme()->get( 'Version' ) );
-        wp_enqueue_style( PROSTYLEE_LANDING.'-aos-css', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/css/aos.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( PROSTYLEE_LANDING.'-style', DIRECTORY_URI.'/style.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( PROSTYLEE_LANDING.'-bootstrap-css', DIRECTORY_URI.'/assets/css/bootstrap.min.css', array(), wp_get_theme()->get( 'Version' ) );
+        wp_enqueue_style( PROSTYLEE_LANDING.'-aos-css', DIRECTORY_URI.'/assets/css/aos.css', array(), wp_get_theme()->get( 'Version' ) );
 	}
 	add_action('wp_enqueue_scripts', PROSTYLEE_LANDING.'_styles');
 
 	function prostylee_landing_scripts() {
-		wp_enqueue_script('jquery');
-		wp_enqueue_script( PROSTYLEE_LANDING.'-bootstrap-js', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/js/bootstrap.min.js', array(), '0.1', false );
-        wp_enqueue_script( PROSTYLEE_LANDING.'-aos-js', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/js/aos.js', array(), '0.1', false );
-		wp_enqueue_script( PROSTYLEE_LANDING.'-main-js', 'http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/js/main.js', array(), '0.1', false );
+		 wp_enqueue_script('jquery');
+		wp_enqueue_script( PROSTYLEE_LANDING.'-bootstrap-js', DIRECTORY_URI.'/assets/js/bootstrap.min.js', array(), '0.1', false );
+        wp_enqueue_script( PROSTYLEE_LANDING.'-aos-js', DIRECTORY_URI.'/assets/js/aos.js', array(), '0.1', false );
+		 wp_enqueue_script( PROSTYLEE_LANDING.'-main-js', DIRECTORY_URI.'/assets/js/main.js', array(), '0.1', false );
 	}
 
 	add_action('wp_enqueue_scripts', PROSTYLEE_LANDING.'_scripts');
+
+
+function catch_that_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+
+	if(empty($first_img)){ //Defines a default image
+		$first_img = "/images/default.jpg";
+	}
+	return $first_img;
+}
+
+function remove_first_image ($content) {
+	if (!is_page() && !is_feed() && !is_feed() && !is_home()) {
+		$content = preg_replace("/<img[^>]+\>/i", "", $content, 1);
+	} return $content;
+}
+add_filter('the_content', 'remove_first_image');
+
+function do_output_buffer() {
+	ob_start();
+}
+add_action('init', 'do_output_buffer');
 ?>

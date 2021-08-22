@@ -1,42 +1,26 @@
         <footer id="prostylee-footer-wrapper">
             <section id="feature-footer">
                 <div class="container">
-                    <div class="inner-feature">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 put-installation">
-                                <h2 class="header text-center">Thế giới thời trang hiện đại đang đợi bạn tải xuống ngay bây giờ!</h3>
-                                <div class="download-app text-center">
-                                    <?php get_template_part( 'components/platform', 'store', array(
-                                            'data' => array(
-                                                'google_play' => 'google_play_color.png',
-                                                'app_store' => 'app_store_color.png'
-                                            )
-                                    ) ); ?>
-                                </div>
-                            </div>
-                            <!-- end put-installation -->
-                            <div class="col-sm-12 col-md-6 footer-banner">
-                                <img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/footer_banner.png" alt=""/>
-                            </div>
-                            <!-- end footer-banner -->
-                        </div>
-                    </div>
-                    <!-- end inner-feature -->
+                    <?php
+                      if (is_page('ve-chung-toi')) {
+                          get_template_part( 'template-parts/footer/footer-about' ) ;
+                      } else if (is_page('tin-tuc') || is_single()) {
+                          get_template_part( 'template-parts/footer/footer-blog' ) ;
+                      }; ?>
                 </div>
             </section>
             <!-- end feature-footer -->
             <footer id="bottom-widgets">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-12 footer-widget about-widget">
+                        <div class="col-md-5 col-sm-12 footer-widget about-widget">
                             <div id="footer-logo">
-                                <img src="http://192.168.1.13:8080/wordpress/prostylee-landing-page/wp-content/themes/prostylee-landing-page/assets/images/footer_logo.png" alt="" class="img">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/images/footer_logo.png" alt="" class="img">
                             </div>
                             <div class="description">
                                 <p>Giới thiệu ngắn về ưng dụng. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Donec eget mauris et mauris maximus sodales. Aliquam vehicula pharetra leo, at elementu.</p>
                             </div>
-                            <p class="copyright">&copy; <?php echo date('Y');?> Prostylee. All rights reserved</p>
 
                         </div>
                         <!-- end about-widget -->
@@ -64,7 +48,7 @@
                             <!-- end address -->
                         </div>
                         <!-- end contact -->
-                        <div class="col-md-3 col-sm-12 footer-widget categories-widget">
+                        <div class="col-md-2 col-sm-12 footer-widget categories-widget">
                             <h3 class="widget-header">Sản phẩm</h3>
                             <ul class="list list-group">
                                 <li class="list-group-item">
@@ -80,7 +64,7 @@
                         </div>
                         <!-- end categories-widget -->
 
-                        <div class="col-md-3 col-sm-12 footer-widget categories-widget">
+                        <div class="col-md-2 col-sm-12 footer-widget categories-widget">
                             <h3 class="widget-header">Prostylee</h3>
                             <ul class="list-group">
                                 <li class="list-group-item">

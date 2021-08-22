@@ -3,7 +3,7 @@
  * Template Name: About
  */
 ?>
-<div id="about-wrapper">
+<div id="about-page">
     <?php get_header();?>
     <section id="feature-wrapper">
         <div class="container">
@@ -27,10 +27,6 @@
                     the_post();
 
                     ?>
-                    <header class="entry-header alignwide">
-
-                    </header><!-- .entry-header -->
-
                     <div class="entry-content">
                         <?php
                         the_content();

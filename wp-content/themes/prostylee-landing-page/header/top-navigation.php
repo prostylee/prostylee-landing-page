@@ -1,11 +1,14 @@
 <?php
 if (has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' )) { ?>
-    <nav class="navbar navbar-expand-md" id="top-bar"
+    <nav class="navbar navbar-expand-md fixed-top" id="top-bar"
          aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>" role="navigation">
         <div class="container">
             <div class="site-branding">
                 <?php if ( has_custom_logo() ) : ?>
-                    <div class="site-logo"><?php the_custom_logo(); ?></div>
+                    <div class="site-logo">
+                        <?php the_custom_logo(); ?>
+                        <a href="<?php echo get_home_url()?>"><img src="<?php echo get_template_directory_uri();?>/assets/logo/header_logo.png" alt="" class="header-logo"/></a>
+                    </div>
                 <?php endif; ?>
                 <?php $blog_info = get_bloginfo( 'name' ); ?>
                 <?php if ( ! empty( $blog_info ) ) : ?>
