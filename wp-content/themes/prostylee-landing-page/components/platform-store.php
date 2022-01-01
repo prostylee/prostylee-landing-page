@@ -11,7 +11,7 @@
         width: 135px;
         height: 40px;
         display: inline-block;
-        text-indent: -1000px;
+        text-indent: -10000px;
         margin: 0 0.2em;
         border-radius: 0.3em;
         text-align: center;

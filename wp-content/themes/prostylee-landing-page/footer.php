@@ -6,6 +6,8 @@
                           get_template_part( 'template-parts/footer/footer-about' ) ;
                       } else if (is_page('tin-tuc') || is_single()) {
                           get_template_part( 'template-parts/footer/footer-blog' ) ;
+                      } else if (is_home()) {
+                          get_template_part( 'template-parts/footer/footer-home' ) ;
                       }; ?>
                 </div>
             </section>

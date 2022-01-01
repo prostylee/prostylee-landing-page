@@ -50,8 +50,8 @@ if (has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' )) { ?>
             </div>
             <!-- end navbarCollapse -->
             <button class="btn btn-primary btn-download-app">Tải ứng dụng</button>
-            </div>
-             <!-- end container -->
+        </div>
+        <!-- end container -->
     </nav>
     <!-- end navbar -->
     <nav id="mobile-nav" class="nav-overlay">
@@ -100,7 +100,7 @@ if (has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' )) { ?>
                         <ul class="socials">
                             <li><a href=""><i class="fab fa-facebook"></i></a></li>
                             <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
                             <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                         <!-- end footer-socials -->

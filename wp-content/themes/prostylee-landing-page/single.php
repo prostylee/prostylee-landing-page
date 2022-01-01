@@ -47,7 +47,7 @@
                    $related = get_posts(
                        array(
                            'category__in' => wp_get_post_categories($post->ID),
-                           'numberposts' => 5,
+                           'numberposts' => 8,
                            "post__not_in" => array($post->ID)
                        )
                    );
@@ -56,7 +56,7 @@
                            $categories = is_array(get_the_category($post->ID)) ? get_the_category($post->ID) : array();
                            setup_postdata($post); ?>
                            <div class="card col-md-3 post-item">
-                               <a href="">
+                               <a href="<?php the_permalink();?>" title="<?php the_title()?>">
                                    <?php the_post_thumbnail("post-thumbnail", array("class" => "card-img-top"));?>
                                </a>
                                <div class="card-body">
